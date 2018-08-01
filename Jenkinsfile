@@ -16,7 +16,7 @@ pipeline {
         stage('Deploy to production'){
             steps{
                 timeout(time:5 , unit:'DAYS'){
-                    input message: 'Aprove To Production Deployment?'
+                    input message: 'QA Aprove To Production Deployment?'
                 }
                 echo 'Now Production...'
             }
